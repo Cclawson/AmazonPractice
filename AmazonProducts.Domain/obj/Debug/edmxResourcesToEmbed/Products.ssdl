@@ -15,6 +15,7 @@
     <Property Name="Name" Type="nvarchar" MaxLength="50" />
     <Property Name="CategoryID" Type="int" Nullable="false" />
     <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="Image" Type="varchar(max)" />
   </EntityType>
   <Association Name="FK_Product_ToTable">
     <End Role="Category" Type="Self.Category" Multiplicity="1" />

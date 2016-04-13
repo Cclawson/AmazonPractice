@@ -104,6 +104,10 @@
     <Content Include="Global.asax" />
     <Content Include="Images\book1.jpg" />
     <Content Include="Images\book2.jpg" />
+    <Content Include="Images\football.jpg" />
+    <Content Include="Images\movie1.jpg" />
+    <Content Include="Images\movie2.jpg" />
+    <Content Include="Images\soccer.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
