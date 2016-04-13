@@ -20,6 +20,7 @@
           <Property Name="Name" Type="nvarchar" MaxLength="50" />
           <Property Name="CategoryID" Type="int" Nullable="false" />
           <Property Name="Description" Type="nvarchar" MaxLength="50" />
+          <Property Name="Image" Type="varchar(max)" />
         </EntityType>
         <Association Name="FK_Product_ToTable">
           <End Role="Category" Type="Self.Category" Multiplicity="1" />
@@ -62,6 +63,7 @@
           <Property Name="CategoryID" Type="Int32" Nullable="false" />
           <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Category" Relationship="Self.FK_Product_ToTable" FromRole="Product" ToRole="Category" />
+          <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK_Product_ToTable">
           <End Role="Category" Type="Self.Category" Multiplicity="1" />
@@ -100,6 +102,7 @@
           <EntitySetMapping Name="Products">
             <EntityTypeMapping TypeName="AmazonPracticeModel.Product">
               <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="Image" ColumnName="Image" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
