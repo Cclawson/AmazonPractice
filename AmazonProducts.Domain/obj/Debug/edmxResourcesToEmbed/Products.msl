@@ -4,6 +4,7 @@
     <EntitySetMapping Name="Categories">
       <EntityTypeMapping TypeName="AmazonPracticeModel.Category">
         <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="Image" ColumnName="Image" />
           <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>

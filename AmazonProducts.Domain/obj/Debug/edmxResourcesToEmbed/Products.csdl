@@ -7,6 +7,7 @@
     <Property Name="Id" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Products" Relationship="Self.FK_Product_ToTable" FromRole="Category" ToRole="Product" />
     <Property Name="CategoryName" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="Product">
     <Key>

@@ -11,6 +11,7 @@
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="CategoryName" Type="nchar" MaxLength="10" />
+          <Property Name="Image" Type="varchar(max)" />
         </EntityType>
         <EntityType Name="Product">
           <Key>
@@ -53,6 +54,7 @@
           <Property Name="Id" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Products" Relationship="Self.FK_Product_ToTable" FromRole="Category" ToRole="Product" />
           <Property Name="CategoryName" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Product">
           <Key>
@@ -94,6 +96,7 @@
           <EntitySetMapping Name="Categories">
             <EntityTypeMapping TypeName="AmazonPracticeModel.Category">
               <MappingFragment StoreEntitySet="Category">
+                <ScalarProperty Name="Image" ColumnName="Image" />
                 <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
